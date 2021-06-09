@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-    <database nom="compta">
+    <database db="compta">
         <host>localhost</host>
         <port>3306</port>
         <user>root</user>

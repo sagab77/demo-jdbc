@@ -29,7 +29,10 @@ public class TestConfigurationProps {
         try {
             XMLConfiguration config = configs.xml("config.xml");
             String host = config.getString("database.host");
+            String database = config.getString("database[@db]");
+            System.out.println(database);
             System.out.println(host);
+
         } catch (ConfigurationException e) {
             e.printStackTrace();
         }
