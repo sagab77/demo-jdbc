@@ -6,6 +6,7 @@ import org.apache.commons.configuration2.XMLConfiguration;
 import org.apache.commons.configuration2.builder.fluent.Configurations;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
+import java.util.Iterator;
 import java.util.ResourceBundle;
 
 public class TestConfigurationProps {
@@ -33,7 +34,10 @@ public class TestConfigurationProps {
             System.out.println(database);
             System.out.println(host);
 
+
+
         } catch (ConfigurationException e) {
+
             e.printStackTrace();
         }
 
