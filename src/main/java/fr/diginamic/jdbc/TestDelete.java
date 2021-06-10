@@ -19,6 +19,7 @@ public class TestDelete {
         Statement statement = connection.createStatement();
 
         int nb = statement.executeUpdate("DELETE FROM COMPTA.FOURNISSEUR WHERE NOM='La Maison des Peintures'");
+        System.out.println("Nombre de lignees suprimees " + nb);
 
         statement.close();
         connection.close();

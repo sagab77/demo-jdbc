@@ -16,10 +16,14 @@ public class TestSelect {
         ResultSet resultSet = null;
 
         try {
+
+            // chargement de driver
             DriverManager.registerDriver(new Driver());
 
+            // creation de connexion
             connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/compta", "root", "");
 
+            // operations select  database
             statement = connection.createStatement();
 
             resultSet = statement.executeQuery("SELECT * FROM FOURNISSEUR");
@@ -48,7 +52,7 @@ public class TestSelect {
                 }
             } catch (SQLException e) {
 
-                System.err.println("Erreur fermeture des ressources : " + e.getMessage());
+                System.err.println("Erreur fermeture des ressources d'access a database: " + e.getMessage());
             }
 
         }

@@ -19,21 +19,6 @@ public class TestInsertion {
             System.out.println("L'insertion s'est bien passée.");
         }
 
-       /* ResultSet result = statement.executeQuery("Select * from bon");
-
-        while (result.next()) {
-
-            Integer id = result.getInt("id");
-
-            Date date = result.getDate("DATE_CMDE");
-            System.out.println(date);
-
-            //String designation = result.getString("DESIGNATION");
-            // System.out.println(id + " " + designation);
-
-            result.close();
-            statement.close();*/
-
 
             connection.close();
 

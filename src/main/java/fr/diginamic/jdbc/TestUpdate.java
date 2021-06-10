@@ -20,7 +20,7 @@ public class TestUpdate {
         Statement statement = connection.createStatement();
 
 
-        int nb = statement.executeUpdate("UPDATE FOURNISSEUR SET nom='Dubois & Fils' where id=3");
+        int nb = statement.executeUpdate("UPDATE FOURNISSEUR SET nom='La maison des  Peintures' where id=4");
 
         System.out.println("Nombre de lignes modifiées:" + nb);
 
