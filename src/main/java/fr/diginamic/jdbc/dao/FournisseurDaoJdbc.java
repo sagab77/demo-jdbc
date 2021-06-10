@@ -67,12 +67,7 @@ public class FournisseurDaoJdbc implements FournisseurDao {
             connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/compta", "root", "");
             System.out.println(connection);
             Statement stat = connection.createStatement();
-            //stat.executeUpdate("INSERT INTO FOURNISSEUR (ID,NOM) VALUES ('"+ fournisseur.getId() +"','"+fournisseur.getNom()+"')");
-            String nom = fournisseur.getNom();
-            if (fournisseur.getNom().contains("'")) {
-                nom = nom.replaceAll("'", "'' ");
-            }
-            stat.executeUpdate("INSERT INTO FOURNISSEUR (ID,NOM) VALUES (" + fournisseur.getId() + ",'" + nom + "')");
+            stat.executeUpdate("INSERT INTO FOURNISSEUR (ID,NOM) VALUES ('"+ fournisseur.getId() +"','"+fournisseur.getNom()+"')");
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
