@@ -5,7 +5,7 @@ public class Fournisseur {
     private int id;
     private String nom;
 
-    public Fournisseur(int id, String nom) {
+    public Fournisseur(Integer id, String nom) {
         this.id = id;
         this.nom = nom;
     }
@@ -24,5 +24,12 @@ public class Fournisseur {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "id=" + id +
+                " nom =" + nom;
     }
 }

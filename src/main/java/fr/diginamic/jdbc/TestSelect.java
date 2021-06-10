@@ -59,7 +59,7 @@ public class TestSelect {
 
         for (Fournisseur fournisseur: listeFournisseurs) {
 
-            System.out.println(fournisseur.getId() + " " +  fournisseur.getNom());
+            System.out.println(fournisseur);
 
         }
 
