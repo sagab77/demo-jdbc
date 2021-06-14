@@ -16,7 +16,7 @@ public class TestDelete {
             // 1- Load mariaDb Driver
             DriverManager.registerDriver(new Driver());
             // 2- Connect to the database 'compta'
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/compta", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/compta", "root", "1234");
 
             state = connection.createStatement();
             int res = state.executeUpdate("DELETE FROM fournisseur WHERE NOM='La Maison des Peintures';");
