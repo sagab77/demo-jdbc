@@ -8,7 +8,7 @@ public class TestConfigurationProps {
         ResourceBundle config = ResourceBundle.getBundle("config");
         String name = config.getString("nom");
         String firstname = config.getString("prenom");
-        String email = config.getString("mail");
+        //String email = config.getString("mail");
 
         //Affiche valeur du 1er param du fichier config
         System.out.println(name);
